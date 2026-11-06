@@ -1,0 +1,9 @@
+{
+  "id": "quadro",
+  "name": "Quadro",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Abre o quadro de tarefas a partir do Markdown.",
+  "author": "Walisson Mariano",
+  "isDesktopOnly": false
+}

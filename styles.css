@@ -1,0 +1,95 @@
+.quadro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 12px;
+}
+
+.quadro-filtro {
+  width: 100%;
+}
+
+.quadro-colunas {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  overflow-x: auto;
+}
+
+.quadro-coluna {
+  flex: 1 0 220px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--background-secondary);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.quadro-coluna h3 {
+  margin: 0 0 8px;
+}
+
+.quadro-cartas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 48px;
+  overflow-y: auto;
+}
+
+.quadro-carta {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: grab;
+}
+
+.quadro-carta-texto {
+  flex: 1;
+  min-width: 0;
+}
+
+.quadro-carta-acoes {
+  display: flex;
+  gap: 4px;
+}
+
+.quadro-carta-acoes button,
+.quadro-editar {
+  font-size: var(--font-ui-smaller);
+}
+
+.quadro-editar {
+  width: 100%;
+}
+
+.quadro-carta.arrastando {
+  opacity: 0.45;
+}
+
+.quadro-coluna.sobre {
+  outline: 1px solid var(--interactive-accent);
+}
+
+.quadro-link {
+  cursor: pointer;
+}
+
+.quadro-data {
+  display: inline-block;
+  margin-left: 6px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.quadro-novo {
+  margin-top: 8px;
+  width: 100%;
+}
